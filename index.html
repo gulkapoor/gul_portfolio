@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gul Kapoor | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f4f6f8;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #003973, #e5e5be);
+      color: #ffffff;
+      border-radius: 0 0 30px 30px;
+      transition: background 0.6s ease-in-out;
+      animation: slideFade 1s ease;
+    }
+
+    .header-heading {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .header-person-name {
+      font-size: 1.6rem;
+      opacity: 0.9;
+    }
+
+    .header-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #ffffff;
+      color: #003973;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .header-btn:hover {
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #ffffff;
+      padding: 15px 0;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .navbar-link {
+      text-decoration: none;
+      color: #003973;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+      color: #e5e5be;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #003973;
+      position: relative;
+    }
+
+    .about-text {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      animation: fadeInUp 1s ease;
+      transition: transform 0.3s;
+    }
+
+    .about-text:hover {
+      transform: translateY(-5px);
+    }
+
+    .skills-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .skill-card {
+      background-color: #ffffff;
+      border: 2px solid #003973;
+      color: #003973;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-card:hover {
+      background-color: #003973;
+      color: #ffffff;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form-btn {
+      background-color: #003973;
+      color: #ffffff;
+      border: none;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form-btn:hover {
+      background-color: #e5e5be;
+      color: #003973;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #003973;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    .social-media-icons {
+      margin-bottom: 15px;
+    }
+
+    .social-media-link {
+      color: #ffffff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .social-media-link:hover {
+      color: #e5e5be;
+    }
+
+    @keyframes slideFade {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header" id="home">
+      <h1 class="header-heading">Python & Data Analytics Enthusiast</h1>
+      <h3 class="header-person-name">Gul Kapoor</h3>
+      <a href="#contact" class="header-btn">Contact</a>
+    </header>
+
+    <nav class="navbar">
+      <a href="#home" class="navbar-link">Home</a>
+      <a href="#about" class="navbar-link">About</a>
+      <a href="#contact" class="navbar-link">Contact</a>
+    </nav>
+
+    <section class="about" id="about">
+      <h1 class="section-heading">About Me</h1>
+      <p class="about-text">
+        Hello! I'm Gul Kapoor, a passionate Python and Data Analytics learner. Currently pursuing my MCA at Panipat Institute of Engineering and Technology (2024–2026), I hold a Bachelor of Commerce degree from KVA DAV College for Women (2021–2024). I'm enthusiastic about extracting meaningful insights from data and transforming them into impactful stories.
+      </p>
+
+      <div class="skills-wrapper">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">Pandas</div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="section-heading">Contact Me</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" value="Gul Kapoor" />
+        <input type="email" placeholder="Email" value="thisisgulkapoor2003@gmail.com" />
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="Send" class="contact-form-btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social-media-icons">
+        <a href="https://github.com" class="social-media-link"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/gul-kapoor-860285320" class="social-media-link"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
+
